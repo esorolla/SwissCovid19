@@ -1,0 +1,21 @@
+---
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## How to use the application
+
+This application imports the number of newly infected people and fatalities by Covid-19 in the different regions of Switzerland since 31-05-2020. The data is daily updated extracted from BAG tweets and can be found [here](https://github.com/daenuprobst/covid19-cases-switzerland/blob/master/covid_19_data_switzerland-phase2.xlsx). The number of cases prior to that date are not counted in this source.
+
+The application has two parts:
+
+1) In the middle of the display there is a dynamic plot showing the cumulative number of infected people and fatalities by Covid-19 since 31-05-2020 in the different regions of Switzerland. The user can drag a slider to modify the date or to push the play button to activate an animation that displays the time evolution of the Covid-19 in Switzerland. The user can inverse the axes if wanted.
+
+2) Under the dynamics plot the cumulative number of infected people and of fatalities is shown. A sidebar on the left of the webpage allows the user to choose the region of interest and the number of elapsed days since the reference date. The plot is an efficient tool to assess the efficacy of the health system in the different regions by evaluating the number of fatalities per infected people.
+
+**NOTE 1: The interactive plot of the App is based in the googleVis package. Thus, it will only work if Flash is enabled.**
+
+**NOTE 2: Major browser vendors have announced they will stop supporting Flash Player after December 2020. This means users will not be able to download Flash Player plugin from the Adobe website and no updates on security patches will be provided. However, Flash Player plugins will continue working.**
